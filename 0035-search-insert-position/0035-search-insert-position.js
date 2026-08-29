@@ -11,9 +11,7 @@ if(target < nums[left]){
         return left; 
     } 
 while (right>=left) {
-    console.log(left,"left",right,"right")
      mid = Math.floor( (left + right) /2);
-    console.log(mid,"mid")
     if(target > nums[nums.length-1]){
         return nums.length-1 + 1;
     }
@@ -26,7 +24,6 @@ while (right>=left) {
         return  mid ;
     }
 }
-    console.log(mid,"outside mid")
     return left;
 
 };
