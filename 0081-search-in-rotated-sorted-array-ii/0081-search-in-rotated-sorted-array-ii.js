@@ -5,17 +5,9 @@
  */
 var search = function(nums, target) {
     let sortArray = nums.sort((a,b)=>a-b)
-    console.log(sortArray,"sortedarray");
     let left =0, right = sortArray.length-1;
     while (left <= right){
-        console.log(left,"left");
-        console.log(right,"right");
         let mid = Math.floor((left+right)/2);
-        console.log(mid,"mid");
-        console.log(nums[left],"checkleft");
-        console.log(nums[right],"checkright");
-        console.log(nums[mid],"checkmid");
-        console.log("-----------------------------------")
         if(nums[mid] === target){
             return true;
         }else if(nums[mid] > target){
